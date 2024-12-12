@@ -1,0 +1,20 @@
+Requirements:-
+    1. User comes to elevator and then presses a button for up or down. -> External Elevator Buttons 
+    2. Then the Elevator number is shownup which is coming to go that direction.
+    3. Once user enters the elevator he can press the floor number to reach. -> Internal Elevator Buttons
+
+Objects:-
+
+    1. Elevator Car
+    2. ElevatorButtons -> Internal, External 
+    3. 
+
+    ElevatorState -> Idle, up, down, OnService
+
+    Elevator -> setState(
+        based on evaluation of requests pending.
+    ), move()  & they have an Elevator Car and inside buttons to press the dest_floor. 
+    When dest_floor is pressed in Elevator Buttons then  a request is generated and 
+
+    ElevatorManager -> List of all elevators & requests for elevator, Based on which a request is routed/assigned to the Elevator.
+
